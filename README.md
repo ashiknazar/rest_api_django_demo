@@ -30,6 +30,21 @@ rest_api_django_demo/
    ```bash
    git clone <repository_url>
    cd rest_api_django_demo
+   ```
+2. **Install Dependencies**
+    ```bash
+   pip install django djangorestframework
+   ```
+3. **Run the newproject API**
+    ```bash
+   cd newproject
+   python manage.py runserver
+   ```
+4. **Run the frontend Project**
+    ```bash
+   cd frontend
+   python manage.py runserver 8001
+   ```
 
 
 
