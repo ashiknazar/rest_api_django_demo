@@ -13,7 +13,7 @@ rest_api_django_demo/
 │   ├── manage.py
 │   ├── frontend_app/    # Your Django app files go here
 │   └── templates/
-│       └── index.html   # HTML page with button to call the API
+│          # HTML page with button to call the API
 ├── newproject/          # Django project providing the API
 │   ├── manage.py
 │   ├── api_app/         # Your Django API app files
