@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>Fetch User Data</h1>
+    <button id="fetchDataBtn">Fetch User Data</button>
+    <p id="result"></p>
+
+    <script>
+        $(document).ready(function(){
+            $('#fetchDataBtn').click(function(){
+                // Call the API endpoint when the button is clicked
+                $.ajax({
+                    url: 'http://127.0.0.1:8000/api/users/',  // Make sure this URL matches your API endpoint
+                    type: 'GET',
+                    success: function(data) {
+                        // On success, display the returned data
+                        $('#result').text('User Name: ' + data.name + ', Age: ' + data.age);
+                    },
+                    error: function(error) {
+                        // In case of an error, display an error message
+                        $('#result').text('Error fetching data');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
