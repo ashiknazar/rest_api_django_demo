@@ -45,6 +45,10 @@ rest_api_django_demo/
    cd frontend
    python manage.py runserver 8001
    ```
+## Notes
+
+- Make sure both servers are running simultaneously in separate terminals.
+- By default, Django will automatically reload changes when you save your files, so you do not need to restart the server every time.
 
 
 
